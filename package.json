@@ -1,6 +1,6 @@
 {
   "name": "@spronta/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Spronta Image CDN — MCP server for LLM integrations",
   "type": "module",
   "main": "./dist/index.js",
