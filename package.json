@@ -1,0 +1,50 @@
+{
+  "name": "@spronta/mcp",
+  "version": "0.1.0",
+  "description": "Spronta Image CDN — MCP server for LLM integrations",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "spronta-mcp": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spronta/mcp.git"
+  },
+  "homepage": "https://www.spronta.com",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "spronta",
+    "image-cdn",
+    "image-optimization",
+    "ai",
+    "llm"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.9.3"
+  }
+}
