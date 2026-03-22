@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.spronta/images",
+  "description": "Upload, transform, and deliver images on a global CDN — directly from AI agents. 18 tools for managing projects, uploading images (URL or base64), creating transform presets, generating signed URLs, and monitoring usage.",
+  "repository": {
+    "url": "https://github.com/spronta/mcp",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@spronta/mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environment_variables": [
+        {
+          "name": "SPRONTA_API_KEY",
+          "description": "Your Spronta project API key (required)",
+          "required": true
+        },
+        {
+          "name": "SPRONTA_PROJECT_ID",
+          "description": "Default project ID (optional, can be passed per-tool)",
+          "required": false
+        },
+        {
+          "name": "SPRONTA_API_URL",
+          "description": "API base URL (default: https://app.spronta.com/api)",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

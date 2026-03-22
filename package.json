@@ -1,7 +1,8 @@
 {
   "name": "@spronta/mcp",
-  "version": "0.1.1",
-  "description": "Spronta Image CDN — MCP server for LLM integrations",
+  "version": "0.1.2",
+  "description": "Spronta Image CDN — MCP server for LLM integrations. Upload, transform, and deliver images via AI agents.",
+  "mcpName": "io.github.spronta/images",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
